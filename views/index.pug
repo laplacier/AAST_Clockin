@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= 'AAST Punch Clock'
+  h2= message
+  .form
+    form(action="" method="POST")
+      .form_input
+        label(for="rfid") Scan your booper:
+        input(type="password" name="rfid" id="rfid" required autofocus)
+      .form_input
+        button(type="submit" class="button_small") ENTER

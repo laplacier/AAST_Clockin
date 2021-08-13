@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= 'Punches'
+  a(href="/") Home
+  form(action="" method="POST")
+    button(type="submit" class="button_small") DOWNLOAD
+  each punch in punches
+    .punch
+      p= `${punch.readableTime} ${punch.staff.first_name} ${punch.staff.last_name}`
