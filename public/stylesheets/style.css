@@ -1,8 +1,39 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #337ab7;
+  color: white;
 }
 
 a {
   color: #00B7FF;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+input {
+  height: 30px;
+  font-size: large;
+  margin: auto;
+  display: block;
+}
+
+label {
+  text-align: center;
+  display: block;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

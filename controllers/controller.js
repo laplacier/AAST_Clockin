@@ -20,7 +20,8 @@ exports.staffPost = async (req, res, next) => {
       const punch = await db.punches.create({
         staff_id: staffExists.id,
       });
-      res.render('index', { message: `Punched for ${staffExists.first_name} ${staffExists.last_name}!` });
+      var d = new Date();
+      res.render('index', { message: `Punched at ${d.toLocaleTimeString()} for ${staffExists.first_name} ${staffExists.last_name}!` });
     }
   } catch(error) {
     next(error);
